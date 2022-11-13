@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneNumberActivity"
+    android:padding="24dp"
+    android:background="#f9f9f9">
+
+    <ImageView
+        android:id="@+id/verifyPhone_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/otp_verify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/verifyPhone_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Verify +91-9988776655"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/verifyPhone_imageView"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@id/verifyPhone_imageView"
+        app:layout_constraintTop_toBottomOf="@id/verifyPhone_imageView" />
+
+    <TextView
+        android:id="@+id/verifyPhone_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enter the OTP code to verify your phone number"
+        app:layout_constraintEnd_toEndOf="@id/verifyPhone_textView"
+        app:layout_constraintStart_toStartOf="@id/verifyPhone_textView"
+        app:layout_constraintTop_toBottomOf="@id/verifyPhone_textView"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/verifyPhone_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/verifyPhone_textView2"
+        app:layout_constraintStart_toStartOf="@id/verifyPhone_textView2"
+        app:layout_constraintTop_toBottomOf="@id/verifyPhone_textView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+
+            <com.chaos.view.PinView
+                android:id="@+id/otp_pinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:itemBackground="@color/gray"
+                android:padding="8dp"
+                android:textColor="@color/gray_1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cursorColor="@color/gray_3"
+                app:cursorWidth="2dp"
+                app:hideLineWhenFilled="true"
+                app:itemCount="6"
+                app:itemHeight="48dp"
+                app:itemRadius="4dp"
+                app:itemSpacing="1dp"
+                app:itemWidth="48dp"
+                app:lineColor="@color/white"
+                app:lineWidth="2dp"
+                app:viewType="rectangle" />
+
+            <Button
+                android:id="@+id/verifyOtp_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green"
+                android:text="VERIFY" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

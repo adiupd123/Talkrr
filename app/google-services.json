@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "377792561618",
+    "project_id": "talkrr-69975",
+    "storage_bucket": "talkrr-69975.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377792561618:android:ee54616e08b1b21576880b",
+        "android_client_info": {
+          "package_name": "com.adiupd123.talkrr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377792561618-bmgnbd37cjn1os9thtf236da9iiumpd2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.adiupd123.talkrr",
+            "certificate_hash": "130af6b8d67ebd79b2ceb42b2a926b9e4dcfcd98"
+          }
+        },
+        {
+          "client_id": "377792561618-s9dil5hn7b4kackq2v5soou0i82p1buj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKzQCQGefvyYGe7xSpEZZwDZVSsAPADgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377792561618-s9dil5hn7b4kackq2v5soou0i82p1buj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
