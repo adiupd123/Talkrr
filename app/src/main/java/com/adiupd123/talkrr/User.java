@@ -1,5 +1,7 @@
 package com.adiupd123.talkrr;
 
+import android.net.Uri;
+
 public class User {
     String userId, name, phoneNumber, profileImage;
 
