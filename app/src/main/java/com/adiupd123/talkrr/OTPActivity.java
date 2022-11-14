@@ -54,7 +54,7 @@ public class OTPActivity extends AppCompatActivity {
         phoneNumber = getIntent().getStringExtra("number");
         countryCode = getIntent().getStringExtra("countryCode");
         phoneNumber = countryCode  + phoneNumber;
-        binding.verifyPhoneTextView.setText("Verify " + phoneNumber);
+        binding.verifyOtpTextView.setText("Verify " + phoneNumber);
         otp = binding.otpPinView.getText().toString();
 
 
@@ -64,9 +64,9 @@ public class OTPActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (binding.otpPinView.getText().toString().isEmpty()) {
-                    Toast.makeText(OTPActivity.this, "OTP Field can't be empty", Toast.LENGTH_SHORT).show();
+                     binding.otpPinView.setError("OTP Field can't be empty");
                 } else if (binding.otpPinView.getText().toString().length() != 6) {
-                    Toast.makeText(OTPActivity.this, "OTP should be of 6 digits", Toast.LENGTH_SHORT).show();
+                    binding.otpPinView.setError("OTP should be of 6 digits");
                 } else {
                     PhoneAuthCredential credential = PhoneAuthProvider.getCredential(otpId, binding.otpPinView.getText().toString());
                     signInWithPhoneAuthCredential(credential);
@@ -125,8 +125,9 @@ public class OTPActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(OTPActivity.this, "User is signed-in", Toast.LENGTH_SHORT).show();
-                            Intent dashIntent = new Intent(OTPActivity.this, MainActivity.class);
+                            Intent dashIntent = new Intent(OTPActivity.this, SetupProfileActivity.class);
                             startActivity(dashIntent);
+                            finish();
                         } else {
                             // Sign in failed, display a message and update the UI
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {

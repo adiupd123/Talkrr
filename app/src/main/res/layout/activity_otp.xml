@@ -9,7 +9,7 @@
     android:background="#f9f9f9">
 
     <ImageView
-        android:id="@+id/verifyPhone_imageView"
+        android:id="@+id/verifyOtp_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/otp_verify"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/verifyPhone_textView"
+        android:id="@+id/verifyOtp_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -26,29 +26,29 @@
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/verifyPhone_imageView"
+        app:layout_constraintEnd_toEndOf="@id/verifyOtp_imageView"
         app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="@id/verifyPhone_imageView"
-        app:layout_constraintTop_toBottomOf="@id/verifyPhone_imageView" />
+        app:layout_constraintStart_toStartOf="@id/verifyOtp_imageView"
+        app:layout_constraintTop_toBottomOf="@id/verifyOtp_imageView" />
 
     <TextView
-        android:id="@+id/verifyPhone_textView2"
+        android:id="@+id/verifyOtp_textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Enter the OTP code to verify your phone number"
-        app:layout_constraintEnd_toEndOf="@id/verifyPhone_textView"
-        app:layout_constraintStart_toStartOf="@id/verifyPhone_textView"
-        app:layout_constraintTop_toBottomOf="@id/verifyPhone_textView"/>
+        app:layout_constraintEnd_toEndOf="@id/verifyOtp_textView"
+        app:layout_constraintStart_toStartOf="@id/verifyOtp_textView"
+        app:layout_constraintTop_toBottomOf="@id/verifyOtp_textView"/>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/verifyPhone_cardView"
+        android:id="@+id/verifyOtp_cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@id/verifyPhone_textView2"
-        app:layout_constraintStart_toStartOf="@id/verifyPhone_textView2"
-        app:layout_constraintTop_toBottomOf="@id/verifyPhone_textView2">
+        app:layout_constraintEnd_toEndOf="@id/verifyOtp_textView2"
+        app:layout_constraintStart_toStartOf="@id/verifyOtp_textView2"
+        app:layout_constraintTop_toBottomOf="@id/verifyOtp_textView2">
 
         <LinearLayout
             android:layout_width="match_parent"
