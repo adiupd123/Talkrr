@@ -1,4 +1,4 @@
-package com.adiupd123.talkrr;
+package com.adiupd123.talkrr.Models;
 
 import android.net.Uri;
 

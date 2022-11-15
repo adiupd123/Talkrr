@@ -1,4 +1,4 @@
-package com.adiupd123.talkrr;
+package com.adiupd123.talkrr.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.adiupd123.talkrr.R;
+import com.adiupd123.talkrr.Models.User;
+import com.adiupd123.talkrr.Adapters.UsersAdapter;
 import com.adiupd123.talkrr.databinding.ActivityMainBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

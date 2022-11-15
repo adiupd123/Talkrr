@@ -1,4 +1,4 @@
-package com.adiupd123.talkrr;
+package com.adiupd123.talkrr.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,6 @@ import android.view.View;
 
 import com.adiupd123.talkrr.databinding.ActivityPhoneNumberBinding;
 import com.google.firebase.auth.FirebaseAuth;
-
-import java.util.Locale;
 
 public class PhoneNumberActivity extends AppCompatActivity {
 
